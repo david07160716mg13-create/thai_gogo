@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>泰國旅遊會話小卡 | Thai Travel Cards</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Noto+Sans+TC:wght@400;500;700&family=Noto+Sans+Thai:wght@400;600&family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header class="app-header">
+            <div class="header-content">
+                <h1>🇹🇭 泰國旅遊小卡</h1>
+                <p class="subtitle">您的隨身泰語發音與學習助手</p>
+            </div>
+            <button id="btn-info" class="icon-btn"><i class="fas fa-lightbulb"></i></button>
+        </header>
+
+        <!-- Teaching / Info Modal -->
+        <div id="info-modal" class="modal hidden">
+            <div class="modal-content glass-panel">
+                <button class="close-btn"><i class="fas fa-times"></i></button>
+                <h2>💡 泰語學習小提示</h2>
+                <div class="info-body">
+                    <p><strong>1. 禮貌語尾詞：</strong></p>
+                    <p>泰語中為了表示禮貌，會在句尾加上語尾詞：</p>
+                    <ul>
+                        <li><span class="highlight">男性說話者：</span> kráp (ครับ)</li>
+                        <li><span class="highlight">女性說話者：</span> kâ (ค่ะ)</li>
+                    </ul>
+                    <p><strong>2. 聲調語言：</strong></p>
+                    <p>泰語是聲調語言，不同的聲調代表不同的意思。請多利用小卡上的「喇叭」按鈕，聆聽並模仿語音的起伏。</p>
+                    <p><strong>3. 如何使用本應用：</strong></p>
+                    <p>點擊上方分類切換情境。卡片採用筆記格式（泰文、空耳發音、中文），方便您直接截圖保存！按下右下角的喇叭圖示即可播放泰語發音。</p>
+                </div>
+            </div>
+        </div>
+
+        <nav class="category-nav" id="category-nav">
+            <!-- Categories will be injected here via JS -->
+        </nav>
+
+        <main class="flashcard-container" id="flashcard-container">
+            <!-- Cards will be injected here via JS -->
+        </main>
+        
+        <footer>
+            <p>Made for your awesome Thai trip ✈️</p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
